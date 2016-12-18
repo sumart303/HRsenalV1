@@ -78,7 +78,7 @@
                         </td>
                     </tr>
                 </table>
-            </div>
+            </div>            
             <div class="nav-bar">
                 <%--<table align="center" style="width: 71%">
                         <tr>
@@ -130,13 +130,6 @@
                     </div>
                 </nav>
             </div>
-            <div id="dropdown-recruitment" class="dropdown">
-                <ul class="dropdown-list menu">
-                    <li>Raise Requisition</li>
-                    <li>Approve Requisition</li>
-                    <li>Create Opening</li>
-                </ul>
-            </div>
         </header>
         <div id="body">
             <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
@@ -147,7 +140,7 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; <%: DateTime.Now.Year %> -My ASP.NET Application</p>
+                    <p>&copy; <%: DateTime.Now.Year %> - Murtaza Abbas | Priya Preetam | Sameer Iqbal | Umar Tariq</p>
                 </div>
             </div>
         </footer>
