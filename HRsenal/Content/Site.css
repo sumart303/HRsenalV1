@@ -660,6 +660,10 @@ div.menu {
         padding: 0;
     }
 
+.navbar-toggle .icon-bar {
+  background-color: #333;
+}
+
 
 /********************
 *   Mobile Styles   *
