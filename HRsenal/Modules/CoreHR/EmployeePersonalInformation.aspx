@@ -31,7 +31,7 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style1">
+            <td class="auto-style2">
                 <asp:Label ID="Label8" runat="server" Text="Phone No. (Res)"></asp:Label>
             </td>
             <td>
@@ -77,7 +77,42 @@
             <td class="auto-style1"></td>
         </tr>
     </table>
+    <br />
+    <br />
 
+    <table>
+
+    <tr>
+        <h1>Emergency Contact</h1>
+  
+    <th>Name</th>
+    <th>Relation</th> 
+    <th>Address</th>
+    <th>Phone No. (Res)</th>
+    <th>Phone No. (Cell)</th>
+    
+  </tr>
+  <tr>
+    <td>Mr. Abc</td>
+    <td>Father</td> 
+    <td>Gulshan</td>
+    <td>02131234567</td>
+    <td>03451234567</td>
+  </tr>
+  <tr>
+    <td><input id="Text1" type="text" /></td>
+    <td><input id="Text1" type="text" /></td> 
+    <td><input id="Text1" type="text" /></td>
+    <td><input id="Text1" type="text" /></td>
+    <td><input id="Text1" type="text" /></td>
+   </tr>
+       <td>
+          <asp:Button ID="Button1" runat="server" Text="Add" />
+      </td>
+      
+  
+       
+</table> 
     <br />
     <br />
     <br />
@@ -88,6 +123,9 @@
     <style type="text/css">
         .auto-style1 {
             width: 105px;
+        }
+        .auto-style2 {
+            width: 171px;
         }
     </style>
 </asp:Content>
