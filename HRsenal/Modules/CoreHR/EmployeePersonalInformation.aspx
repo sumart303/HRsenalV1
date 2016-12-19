@@ -80,10 +80,10 @@
     <br />
     <br />
 
+    <h1>Emergency Contact</h1>
     <table>
 
         <tr>
-            <h1>Emergency Contact</h1>
 
             <th>Name</th>
             <th>Relation</th>
