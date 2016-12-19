@@ -400,7 +400,9 @@ label {
     font-weight: 600;
 }
 
-    label.ch
+    label.checkbox {
+        display: inline;
+    }
 
 input, textarea {
     border: 1px solid #e2e2e2;
@@ -410,10 +412,6 @@ input, textarea {
     margin: 5px 0 6px 0;
     padding: 5px;
     width: 212px;
-}
-
-  padding: 5px;
-    width: 300px;
 }
 
 textarea {
@@ -657,6 +655,11 @@ div.menu {
 
     .dropdown-list, .menu li {
         margin: 0;
+        padding: 0;
+    }
+
+
+gin: 0;
         padding: 0;
     }
 
