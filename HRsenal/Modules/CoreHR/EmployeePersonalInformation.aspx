@@ -93,18 +93,18 @@
     
   </tr>
   <tr>
-    <td>Mr. Abc</td>
-    <td>Father</td> 
-    <td>Gulshan</td>
-    <td>02131234567</td>
-    <td>03451234567</td>
+    <th>Mr. Abc</th>
+    <th>Father</th> 
+    <th>Gulshan</th>
+    <th>02131234567</th>
+    <th>03451234567</th>
   </tr>
   <tr>
-    <td><input id="Text1" type="text" /></td>
-    <td><input id="Text1" type="text" /></td> 
-    <td><input id="Text1" type="text" /></td>
-    <td><input id="Text1" type="text" /></td>
-    <td><input id="Text1" type="text" /></td>
+    <th><input id="Text1" type="text" /></th>
+    <th><input id="Text1" type="text" /></th> 
+    <th><input id="Text1" type="text" /></th>
+    <th><input id="Text1" type="text" /></th>
+    <th><input id="Text1" type="text" /></th>
    </tr>
        <td>
           <asp:Button ID="Button1" runat="server" Text="Add" />
@@ -126,6 +126,10 @@
         }
         .auto-style2 {
             width: 171px;
+        }
+
+        .auto-style3 {
+            width: 80px;
         }
     </style>
 </asp:Content>
