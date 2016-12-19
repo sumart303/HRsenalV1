@@ -411,7 +411,7 @@ input, textarea {
     font-size: 1.2em;
     margin: 5px 0 6px 0;
     padding: 5px;
-    width: 300px;
+    width: 212px;
 }
 
 textarea {
@@ -655,6 +655,11 @@ div.menu {
 
     .dropdown-list, .menu li {
         margin: 0;
+        padding: 0;
+    }
+
+
+gin: 0;
         padding: 0;
     }
 
