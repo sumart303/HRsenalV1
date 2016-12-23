@@ -13,7 +13,11 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+
 </head>
 <body>
     <form runat="server">
@@ -40,15 +44,14 @@
         <header>
             <div class="collapse navbar-collapse">
                 <!-- Company logo and user profile -->
-                <table align="center" style="width: 100%">
+                <table class="table">
                     <tr>
-                        <td style="width:13.5%"></td>
-                        <td style="width:50%">
+                        <td style="width: 13.5%"></td>
+                        <td style="width: 50%">
                             <asp:ImageButton CssClass="CompanyLogo" ID="Home" OnClick="Home_Click" AlternateText="Company Logo" ImageUrl="Images/companylogo.jpg" runat="server" />
-                            <span class="icon-bar"></span>
                         </td>
-                        <td style="width:23%">
-                            <table>
+                        <td style="width: 23%">
+                            <table style="table-layout: fixed; width: 100%; max-width: 100%">
                                 <tr>
                                     <td class="user-controls">
                                         <section id="login">
@@ -78,47 +81,59 @@
                                 </tr>
                             </table>
                         </td>
-                        <td style="width:13.5%"></td>
+                        <td style="width: 13.5%"></td>
                     </tr>
                 </table>
             </div>
             <div class="nav-bar">
-                <table align="center" style="width: 71%">
+                <%--<table align="center" style="table-layout: fixed; height: initial; width: 71%">
                     <tr>
-                        <td>
-                            <nav class="navbar" style="margin-bottom: 0px">
-                                <div class="container-fluid" style="padding:0px">
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="border: solid 0.5px #333">
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                    </div>
-                                    <div class="collapse navbar-collapse" id="myNavbar">
-                                        <ul class="nav navbar-nav">
-                                            <li><a class="dropdown-toggle" data-toggle="dropdown" runat="server">Recruitment</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">Raise Requisition</a></li>
-                                                    <li><a href="#">Approve Requisition</a></li>
-                                                    <li><a href="#">View Request Status</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a runat="server" href="~/Modules/CoreHR/EmployeePersonalInformation.aspx">Employee</a></li>
-                                            <li><a runat="server" href="#">Time Management</a></li>
-                                            <li><a runat="server" href="#">Payroll</a></li>
-                                            <li><a runat="server" href="#">Appraisal</a></li>
-                                            <li><a runat="server" href="#">360 Survey</a></li>
-                                            <li><a runat="server" href="#">Training</a></li>
-                                            <li><a runat="server" href="#">Separation</a></li>
-                                            <li><a runat="server" href="#">Succession</a></li>
-                                        </ul>
-                                    </div>
+                        <td>--%>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <nav class="navbar" style="margin-bottom: 0px">
+                            <div class="container-fluid" style="padding: 0px">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="border: solid 0.5px #333">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
                                 </div>
-                            </nav>
-                        </td>
+                                <div class="collapse navbar-collapse" id="myNavbar">
+                                    <ul class="nav navbar-nav">
+                                        <li><a class="dropdown-toggle" data-toggle="dropdown" runat="server">Recruitment</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Raise Requisition</a></li>
+                                                <li><a href="#">Approve Requisition</a></li>
+                                                <li><a href="#">View Request Status</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Create Applicant</a></li>
+                                                <li><a href="#">Applicant Status</a></li>
+                                                <li><a href="#">Create Employee</a></li>
+                                                <li><a href="#">Employee Status</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-toggle" data-toggle="dropdown" runat="server">Personnel</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a runat="server" href="~/Modules/CoreHR/EmployeePersonalInformation.aspx">Employee</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a runat="server" href="#">Time Management</a></li>
+                                        <li><a runat="server" href="#">Payroll</a></li>
+                                        <li><a runat="server" href="#">Appraisal</a></li>
+                                        <li><a runat="server" href="#">Training</a></li>
+                                        <li><a runat="server" href="#">Separation</a></li>
+                                        <li><a runat="server" href="#">Succession</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <%--</td>
                     </tr>
-                </table>
+                </table>--%>
             </div>
         </header>
         <div id="body">
@@ -136,18 +151,4 @@
         </footer>
     </form>
 </body>
-<script src="Scripts/jquery-1.9.1.min.js"></script>
-<script src="Scripts/bootstrap.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#recruitment").click(function () {
-            $("#dropdown-recruitment").show(1000);
-        });
-        $(".dropdown").mouseleave(function () {
-            $("#dropdown-recruitment").hide(1000);
-        });
-
-    });
-
-</script>
 </html>
