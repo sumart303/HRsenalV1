@@ -229,7 +229,100 @@
             </asp:GridView>
         </asp:Panel>
         <br />
+        
+        <h3>Dependants</h3>
+        <asp:Panel runat="server">
+            <asp:GridView CssClass="table mygridview" ID="GridDependants" AutoGenerateColumns="false"
+                ShowHeaderWhenEmpty="true" runat="server">
+                <Columns>
+                    <asp:BoundField HeaderText="Name"></asp:BoundField>
+                    <asp:BoundField HeaderText="Age"></asp:BoundField>
+                    <asp:BoundField HeaderText="Relation"></asp:BoundField>
+                    <asp:BoundField HeaderText="Occupation"></asp:BoundField>
+                    <asp:BoundField HeaderText="Phone No. (Cell)"></asp:BoundField>
+                    <asp:CommandField ButtonType="Link" InsertText="Add" DeleteText="Remove" />
+                </Columns>
+                <EmptyDataTemplate>
+                    <asp:Label Text="No Records Found" runat="server" />
+                    <asp:LinkButton Text="Add" runat="server" Style="float: right" />
+                </EmptyDataTemplate>
+            </asp:GridView>
+        </asp:Panel>
+
         <br />
+
+        <h3>Educational Background</h3>
+        <asp:Panel runat="server">
+            <asp:GridView CssClass="table mygridview" ID="GridEducation" AutoGenerateColumns="false"
+                ShowHeaderWhenEmpty="true" runat="server">
+                <Columns>
+                    <asp:BoundField HeaderText="Achievement"></asp:BoundField>
+                    <asp:BoundField HeaderText="Institute"></asp:BoundField>
+                    <asp:BoundField HeaderText="Year"></asp:BoundField>
+                    <asp:CommandField ButtonType="Link" InsertText="Add" DeleteText="Remove" />
+                </Columns>
+                <EmptyDataTemplate>
+                    <asp:Label Text="No Records Found" runat="server" />
+                    <asp:LinkButton Text="Add" runat="server" Style="float: right" />
+                </EmptyDataTemplate>
+            </asp:GridView>
+        </asp:Panel>
+
+        <br />
+
+        <h3>Work Experience</h3>
+        <asp:Panel runat="server">
+            <asp:GridView CssClass="table mygridview" ID="GridWork" AutoGenerateColumns="false"
+                ShowHeaderWhenEmpty="true" runat="server">
+                <Columns>
+                    <asp:BoundField HeaderText="Experience"></asp:BoundField>
+                    <asp:BoundField HeaderText="Organization"></asp:BoundField>
+                    <asp:BoundField HeaderText="Year"></asp:BoundField>
+                    <asp:CommandField ButtonType="Link" InsertText="Add" DeleteText="Remove" />
+                </Columns>
+                <EmptyDataTemplate>
+                    <asp:Label Text="No Records Found" runat="server" />
+                    <asp:LinkButton Text="Add" runat="server" Style="float: right" />
+                </EmptyDataTemplate>
+            </asp:GridView>
+        </asp:Panel>
+
+        <br />
+
+        <h3>Medical History</h3>
+        <asp:Panel runat="server">
+            <asp:GridView CssClass="table mygridview" ID="GridMedical" AutoGenerateColumns="false"
+                ShowHeaderWhenEmpty="true" runat="server">
+                <Columns>
+                    <asp:BoundField HeaderText="Treated for"></asp:BoundField>
+                    <asp:BoundField HeaderText="Year"></asp:BoundField>
+                    <asp:CommandField ButtonType="Link" InsertText="Add" DeleteText="Remove" />
+                </Columns>
+                <EmptyDataTemplate>
+                    <asp:Label Text="No Records Found" runat="server" />
+                    <asp:LinkButton Text="Add" runat="server" Style="float: right" />
+                </EmptyDataTemplate>
+            </asp:GridView>
+        </asp:Panel>
+
+        <br />
+
+        <h3>Disciplinary Record</h3>
+        <asp:Panel runat="server">
+            <asp:GridView CssClass="table mygridview" ID="GridDiscipline" AutoGenerateColumns="false"
+                ShowHeaderWhenEmpty="true" runat="server">
+                <Columns>
+                    <asp:BoundField HeaderText="Details"></asp:BoundField>
+                    <asp:BoundField HeaderText="Date"></asp:BoundField>
+                    <asp:CommandField ButtonType="Link" InsertText="Add" DeleteText="Remove" />
+                </Columns>
+                <EmptyDataTemplate>
+                    <asp:Label Text="No Records Found" runat="server" />
+                    <asp:LinkButton Text="Add" runat="server" Style="float: right" />
+                </EmptyDataTemplate>
+            </asp:GridView>
+        </asp:Panel>
+
         <br />
         <br />
 

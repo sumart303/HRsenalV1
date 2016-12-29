@@ -8,7 +8,8 @@
 //------------------------------------------------------------------------------
 
 namespace HRsenal {
-        
+    
+    
     public partial class EmployeeInformation {
         
         /// <summary>
@@ -91,6 +92,51 @@ namespace HRsenal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridEmergencyContact;
+        
+        /// <summary>
+        /// GridDependants control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridDependants;
+        
+        /// <summary>
+        /// GridEducation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridEducation;
+        
+        /// <summary>
+        /// GridWork control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridWork;
+        
+        /// <summary>
+        /// GridMedical control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridMedical;
+        
+        /// <summary>
+        /// GridDiscipline control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridDiscipline;
         
         /// <summary>
         /// Label1 control.
