@@ -1,71 +1,66 @@
 ﻿<%@ Page Title="Employee Information" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EmployeeInformation.aspx.cs" Inherits="HRsenal.EmployeeInformation" %>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="HeadContent">
-        <style>
-    ul.tab {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #FF0000;
-    background-color: #FF0000;
+    <style type="text/css">
+        ul.tab {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            /*overflow: hidden;*/
+            /*border: 1px solid #FF0000;*/
+            background-color: #256399;
+            font-size: 18px;
+        }
 
-    
-    font-size: 18px;
-}
-
-/* Float the list items side by side */
-ul.tab li {
-    display: inline-block;
-    vertical-align: bottom
-    float: left;
-    text-align:center;
-    background-color: #ccc;
-           
-                height: 24px;
-                width: 420px;
-                list-style-type:none;
-        list-style-position:hanging;
-        margin:0;
-        padding:0
+            /* Float the list items side by side */
+            ul.tab li {
+                display: inline-block;
+                vertical-align: bottom;
+                float: left;
+                text-align: center;
+                background-color: #256399;
+                /*height: 24px;*/
+                /*width: 420px;*/
+                list-style-type: none;
+                list-style-position: hanging;
+                margin: 0;
+                padding: 0;
             }
 
-/* Style the links inside the list items */
-ul.tab li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-}
+                /* Style the links inside the list items */
+                ul.tab li a {
+                    display: inline-block;
+                    color: #fff;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    font-size: 17px;
+                }
 
-/* Change background color of links on hover */
-ul.tab li a:hover {background-color: #70a8f9;}
+                    /* Change background color of links on hover */
+                    ul.tab li a:hover {
+                        background-color: #0088ff;
+                    }
 
-/* Create an active/current tablink class */
-ul.tab li a:focus, .active {background-color: #23569f;
-                            color:white;
-                            box-shadow:inherit;
-}
+                    /* Create an active/current tablink class */
+                    ul.tab li a:focus, .active {
+                        background-color: #0088ff;
+                        color: #ffd800;
+                        box-shadow: inherit;
+                    }
 
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            /*padding: 6px 12px;*/
+            padding: 0 10px;
+            /*border: 5px solid #0088ff;*/
+            border-top: 5px solid #0088ff;
+        }
+    </style>
 
-
-
-
-
-        </style>
-
-    <script>
-
+    <script type="text/javascript">
         function openCity(evt, cityName) {
             // Declare all variables
             var i, tabcontent, tablinks;
@@ -86,13 +81,13 @@ ul.tab li a:focus, .active {background-color: #23569f;
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
 
-
-            $(document).ready(function () {
-                $('.link:first').addClass('active');
-            });
         }
-        </script>
 
+        $(document).ready(function (e) {
+            openCity(event, 'Personal Information');
+            $('.tablinks:first').addClass('active');
+        });
+    </script>
 
 
     <style type="text/css">
@@ -127,19 +122,17 @@ ul.tab li a:focus, .active {background-color: #23569f;
         <h1><%: Title %></h1>
     </hgroup>
     <br />
-    
-    <ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Personal Information')">Personal Information</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Job Information')">Job Information</a></li>
-  
-</ul>
+    <div class="container">
 
-
-<div id="Personal Information" class="tabcontent">
-  
-     <article>
-
-          <h3>Personal Information</h3>
+        <div class="row">
+            <ul class="tab">
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Personal Information')">Personal Information</a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Job Information')">Job Information</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="Personal Information" class="tabcontent">
+        <h3>Personal Information</h3>
 
         <table>
             <tr>
@@ -147,7 +140,7 @@ ul.tab li a:focus, .active {background-color: #23569f;
                     <asp:Label ID="Label19" runat="server" Text="Employee ID"></asp:Label>
                 </td>
                 <td>
-                    <input id="Text1" type="text" />
+                    <input type="text" />
                 </td>
             </tr>
             <tr>
@@ -231,7 +224,7 @@ ul.tab li a:focus, .active {background-color: #23569f;
                 </Columns>
                 <EmptyDataTemplate>
                     <asp:Label Text="No Records Found" runat="server" />
-                    <asp:LinkButton Text="Add" runat="server" Style="float:right" />
+                    <asp:LinkButton Text="Add" runat="server" Style="float: right" />
                 </EmptyDataTemplate>
             </asp:GridView>
         </asp:Panel>
@@ -239,19 +232,14 @@ ul.tab li a:focus, .active {background-color: #23569f;
         <br />
         <br />
         <br />
-    </article>
 
-</div>
+    </div>
 
     <div id="Job Information" class="tabcontent" style="display: none;">
-  
-  
-
-    <article>
 
         <h3>Job Information</h3>
 
-        <table>
+        <table style="table-layout: fixed; width: 100%">
             <tr>
                 <td class="auto-style1">
                     <asp:Label ID="Label1" runat="server" Text="Company Name"></asp:Label>
@@ -391,7 +379,10 @@ ul.tab li a:focus, .active {background-color: #23569f;
         <br />
         <br />
         <center><asp:Button ID="Button1" runat="server" Text="Save" /></center>
-    </article>
+
     </div>
 
+
+
+    <br />
 </asp:Content>
