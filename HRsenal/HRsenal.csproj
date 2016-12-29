@@ -126,11 +126,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Modules\CoreHR\EmployeePersonalInformation.aspx" />
+    <Content Include="Modules\CoreHR\EmployeeInformation.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
     <Content Include="Account\OpenAuthProviders.ascx" />
-    <Content Include="Modules\CoreHR\EmployeeJobInformation.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -263,12 +262,12 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\AuthConfig.cs" />
-    <Compile Include="Modules\CoreHR\EmployeePersonalInformation.aspx.cs">
-      <DependentUpon>EmployeePersonalInformation.aspx</DependentUpon>
+    <Compile Include="Modules\CoreHR\EmployeeInformation.aspx.cs">
+      <DependentUpon>EmployeeInformation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Modules\CoreHR\EmployeePersonalInformation.aspx.designer.cs">
-      <DependentUpon>EmployeePersonalInformation.aspx</DependentUpon>
+    <Compile Include="Modules\CoreHR\EmployeeInformation.aspx.designer.cs">
+      <DependentUpon>EmployeeInformation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -292,13 +291,6 @@
       <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Modules\CoreHR\EmployeeJobInformation.aspx.cs">
-      <DependentUpon>EmployeeJobInformation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Modules\CoreHR\EmployeeJobInformation.aspx.designer.cs">
-      <DependentUpon>EmployeeJobInformation.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
