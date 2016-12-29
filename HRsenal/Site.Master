@@ -115,8 +115,7 @@
                                         <li><a class="dropdown-toggle" data-toggle="dropdown" runat="server">Personnel</a>
                                             <ul class="dropdown-menu">
                                                 <li><a runat="server" href="~/Modules/CoreHR/EmployeeSearch.aspx">Employee Search</a></li>
-                                                <li><a runat="server" href="~/Modules/CoreHR/EmployeePersonalInformation.aspx">Employee Personal Information</a></li>
-                                                <li><a runat="server" href="~/Modules/CoreHR/EmployeeJobInformation.aspx">Employee Job Description</a></li>
+                                                <li><a runat="server" href="~/Modules/CoreHR/EmployeeInformation.aspx">Employee Information</a></li>
                                             </ul>
                                         </li>
                                         <li><a runat="server" href="#">Time Management</a></li>
