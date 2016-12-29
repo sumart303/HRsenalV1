@@ -107,12 +107,14 @@
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Create Applicant</a></li>
                                                 <li><a href="#">Applicant Status</a></li>
+                                                <li role="separator" class="divider"></li>
                                                 <li><a href="#">Create Employee</a></li>
                                                 <li><a href="#">Employee Status</a></li>
                                             </ul>
                                         </li>
                                         <li><a class="dropdown-toggle" data-toggle="dropdown" runat="server">Personnel</a>
                                             <ul class="dropdown-menu">
+                                                <li><a runat="server" href="~/Modules/CoreHR/EmployeeSearch.aspx">Employee Search</a></li>
                                                 <li><a runat="server" href="~/Modules/CoreHR/EmployeePersonalInformation.aspx">Employee Personal Information</a></li>
                                                 <li><a runat="server" href="~/Modules/CoreHR/EmployeeJobInformation.aspx">Employee Job Description</a></li>
                                             </ul>

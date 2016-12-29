@@ -5,9 +5,9 @@
 }
 
 body {
-    background-color: #fff;
-    border-top: solid 5px;
-    border-color: khaki;
+    background-color: #a4d4e6;
+    /*border-top: solid 5px;
+    border-color: khaki;*/
     color: #333;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
@@ -108,7 +108,7 @@ h5, h6 {
 .main-content {
     /*background: url("../Images/accent.png") no-repeat;*/
     padding-left: 10px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .featured + .main-content {
@@ -121,8 +121,11 @@ header .content-wrapper {
 
 footer {
     clear: both;
-    background-color: #e2e2e2;
-    font-size: .8em;
+    background-color: #256399;
+    border-top: 5px solid #0088ff;
+    color: white;
+    padding-top: 10px;
+    font-size: .9em;
     height: 100px;
 }
 
@@ -211,7 +214,7 @@ ul#menu {
 ----------------------------------------------------------*/
 /* featured */
 .featured {
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
     .featured .content-wrapper {
@@ -568,6 +571,13 @@ tr.pager td {
 /********************
 *   Custom Styles   *
 ********************/
+.content-wrapper {
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.main-content {
+    background-color: white;
+}
 
 a {
     cursor: pointer;
@@ -593,7 +603,8 @@ a {
     background-image: -webkit-linear-gradient(top, #c7d1d6 0%, #c8c8c8 100%);
     background-image: linear-gradient(top, #c7d1d6 0%, #c8c8c8 100%);*/
     background-color: #256399;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
+    border-top: 5px solid #0088ff;
     /*border-bottom: 5px solid khaki;*/
 }
 
@@ -601,15 +612,15 @@ a {
     color: #FFF;
 }
 
-.navbar a:hover {
-    color: #ffd800;
-}
+    .navbar a:hover {
+        color: #ffd800;
+    }
 
 .mygridview {
     table-layout: fixed;
     font-family: Calibri, Arial, Verdana, sans-serif;
     font-size: 10px;
-    border: 1px solid #dd0f0f;
+    border: 1px solid #256399;
     height: auto;
 }
 
@@ -617,11 +628,11 @@ a {
         font-style: bold;
         color: white;
         /*border: 1px solid black;*/
-        background-image: -ms-linear-gradient(top, #ff0000 0%, #dd0f0f 100%);
-        background-image: -o-linear-gradient(top, #ff0000 0%, #dd0f0f 100%);
-        background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #ff0000), color-stop(1, #dd0f0f));
-        background-image: -webkit-linear-gradient(top, #ff0000 0%, #dd0f0f 100%);
-        background-image: linear-gradient(top, #ff0000 0%, #dd0f0f 100%);
+        background-image: -ms-linear-gradient(top, #256399 0%, #0088ff 100%);
+        background-image: -o-linear-gradient(top, #256399 0%, #0088ff 100%);
+        background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #256399), color-stop(1, #0088ff));
+        background-image: -webkit-linear-gradient(top, #256399 0%, #0088ff 100%);
+        background-image: linear-gradient(top, #256399 0%, #0088ff 100%);
     }
 
     .mygridview td {
@@ -630,7 +641,7 @@ a {
     }
 
         .mygridview td a {
-            color: red;
+            color: #256399;
             text-decoration: none;
         }
 
