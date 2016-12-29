@@ -17,9 +17,9 @@
                             <legend>Log in Form</legend>
                             <ol>
                                 <li>
-                                    <table>
+                                    <table style="table-layout:fixed; width:inherit">
                                         <tr>
-                                            <td>
+                                            <td style="width:100px; padding-right:10px;">
                                                 <asp:Label runat="server" AssociatedControlID="UserName">User name</asp:Label>
 
                                             </td>
@@ -32,9 +32,9 @@
                                     </table>
                                 </li>
                                 <li>
-                                    <table>
+                                    <table style="table-layout:fixed; width: inherit">
                                         <tr>
-                                            <td>
+                                            <td style="width: 100px; padding-right:10px;">
                                                 <asp:Label runat="server" AssociatedControlID="Password">Password</asp:Label>
 
                                             </td>
