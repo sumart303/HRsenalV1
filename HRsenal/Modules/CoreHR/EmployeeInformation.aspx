@@ -21,7 +21,7 @@ ul.tab li {
     float: left;
     text-align:center;
     background-color: #ccc;
-           
+           color:white;
                 height: 24px;
                 width: 420px;
                 list-style-type:none;
