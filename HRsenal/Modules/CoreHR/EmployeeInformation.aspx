@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Employee Information" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EmployeeInformation.aspx.cs" Inherits="HRsenal.About" %>
+﻿<%@ Page Title="Employee Information" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EmployeeInformation.aspx.cs" Inherits="HRsenal.EmployeeInformation" %>
 
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="HeadContent">
         <style>

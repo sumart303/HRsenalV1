@@ -8,9 +8,8 @@
 //------------------------------------------------------------------------------
 
 namespace HRsenal {
-    
-    
-    public partial class About {
+        
+    public partial class EmployeeInformation {
         
         /// <summary>
         /// Label19 control.
