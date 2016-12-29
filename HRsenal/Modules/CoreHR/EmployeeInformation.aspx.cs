@@ -8,7 +8,7 @@ using System.Data;
 
 namespace HRsenal
 {
-    public partial class About : Page
+    public partial class EmployeeInformation : Page
     {
         private DataTable EmergencyContact;
         protected void Page_Load(object sender, EventArgs e)
