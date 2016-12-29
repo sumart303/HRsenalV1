@@ -322,6 +322,10 @@
                 </EmptyDataTemplate>
             </asp:GridView>
         </asp:Panel>
+       
+        <br />
+        <br />
+        <center><asp:Button ID="Button2" runat="server" Text="Save" /></center>
 
         <br />
         <br />
