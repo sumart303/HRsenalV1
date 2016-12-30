@@ -309,7 +309,7 @@
 
         <h3>Disciplinary Record</h3>
         <asp:Panel runat="server">
-            <asp:GridView CssClass="table mygridview" ID="GridDiscipline" AutoGenerateColumns="false"
+            <asp:GridView CssClass="table mygridview" ID="GridDiscipline" AutoGenerateColumns="true"
                 ShowHeaderWhenEmpty="true" runat="server">
                 <Columns>
                     <asp:BoundField HeaderText="Details"></asp:BoundField>
