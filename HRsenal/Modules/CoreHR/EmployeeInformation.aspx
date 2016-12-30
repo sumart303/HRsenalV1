@@ -134,76 +134,85 @@
     <div id="Personal Information" class="tabcontent">
         <h3>Personal Information</h3>
 
-        <table>
+        <table style="table-layout:fixed; width: 100%">
             <tr>
-                <td class="auto-style1">
-                    <asp:Label ID="Label19" runat="server" Text="Employee ID"></asp:Label>
-                </td>
                 <td>
-                    <input type="text" />
+                    <table>
+                        <tr>
+                            <td class="auto-style1">
+                                <asp:Label ID="Label19" runat="server" Text="Employee ID"></asp:Label>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1">
+                                <asp:Label ID="Label20" runat="server" Text="Employee Name"></asp:Label>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1">
+                                <asp:Label ID="Label21" runat="server" Text="NIC"></asp:Label>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style2">
+                                <asp:Label ID="Label22" runat="server" Text="Phone No. (Res)"></asp:Label>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1">
+                                <asp:Label ID="Label23" runat="server" Text="Phone No. (Cell)"></asp:Label>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1">
+                                <asp:Label ID="Label24" runat="server" Text="Postal Address"></asp:Label>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1">
+                                <asp:Label ID="Label25" runat="server" Text="Personal Email"></asp:Label>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1">
+                                <asp:Label ID="Label26" runat="server" Text="Date Of Birth"></asp:Label>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1"></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1"></td>
+                        </tr>
+                    </table>
                 </td>
-            </tr>
-            <tr>
-                <td class="auto-style1">
-                    <asp:Label ID="Label20" runat="server" Text="Employee Name"></asp:Label>
+                <td style="vertical-align:top">
+                    <asp:Image ID="ImgEmpPic" ClientIDMode="Static" ImageUrl="/Images/userpic.png" runat="server" Width="200px" Style="float:right; border: 1px solid gray; border-radius: 4px;"/>
                 </td>
-                <td>
-                    <input type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style1">
-                    <asp:Label ID="Label21" runat="server" Text="NIC"></asp:Label>
-                </td>
-                <td>
-                    <input type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style2">
-                    <asp:Label ID="Label22" runat="server" Text="Phone No. (Res)"></asp:Label>
-                </td>
-                <td>
-                    <input type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style1">
-                    <asp:Label ID="Label23" runat="server" Text="Phone No. (Cell)"></asp:Label>
-                </td>
-                <td>
-                    <input type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style1">
-                    <asp:Label ID="Label24" runat="server" Text="Postal Address"></asp:Label>
-                </td>
-                <td>
-                    <input type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style1">
-                    <asp:Label ID="Label25" runat="server" Text="Personal Email"></asp:Label>
-                </td>
-                <td>
-                    <input type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style1">
-                    <asp:Label ID="Label26" runat="server" Text="Date Of Birth"></asp:Label>
-                </td>
-                <td>
-                    <input type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style1"></td>
-            </tr>
-            <tr>
-                <td class="auto-style1"></td>
             </tr>
         </table>
         <br />
